@@ -5,8 +5,9 @@ vim.opt.smartindent = true
 vim.opt.updatetime = 300
 
 -- general
-lvim.builtin.nvimtree.setup.view.side = "right"
 lvim.builtin.nvimtree.setup.view.auto_resize = true
+lvim.builtin.nvimtree.setup.view.side = "right"
+lvim.builtin.lspinstall.active = true
 lvim.builtin.dashboard.active = true
 lvim.line_wrap_cursor_movement = true
 lvim.debug = true
@@ -42,18 +43,6 @@ lvim.builtin.telescope.defaults.mappings.n["<C-k>"] = actions.move_selection_pre
 lvim.builtin.treesitter.autotag = { enable = true }
 lvim.builtin.treesitter.rainbow = { enable = true }
 
--- nvim-autopairs
-require("nvim-autopairs.completion.cmp").setup({
-	map_cr = true,
-	map_complete = true,
-	auto_select = false,
-	insert = false,
-	map_char = {
-		all = "(",
-		tex = "{",
-	},
-})
-
 -- vim cmd
 vim.cmd([[
     let g:move_key_modifier = 'C'
@@ -69,12 +58,6 @@ require("nvim-treesitter.configs").setup({
 	highlight = {
 		enable = true,
 		disable = {},
-	},
-})
-
-require("cmp").setup({
-	sources = {
-		{ name = "luasnip" },
 	},
 })
 
