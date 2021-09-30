@@ -5,9 +5,10 @@ vim.opt.smartindent = true
 vim.opt.updatetime = 300
 
 -- general
+lvim.builtin.nvimtree.setup.view.side = "right"
+lvim.builtin.nvimtree.setup.view.auto_resize = true
 lvim.builtin.dashboard.active = true
 lvim.line_wrap_cursor_movement = true
-lvim.builtin.nvimtree.setup.view.side = "right"
 lvim.debug = true
 lvim.log.level = "warn"
 lvim.colorscheme = "one-monokai"
@@ -40,7 +41,6 @@ lvim.builtin.telescope.defaults.mappings.n["<C-k>"] = actions.move_selection_pre
 
 lvim.builtin.treesitter.autotag = { enable = true }
 lvim.builtin.treesitter.rainbow = { enable = true }
-lvim.builtin.lualine.options.theme = "evil_lualine"
 
 -- nvim-autopairs
 require("nvim-autopairs.completion.cmp").setup({
@@ -223,6 +223,14 @@ lvim.plugins = {
 
 -- autocommands
 lvim.autocommands.custom_groups = {
+	-- set tabstop
 	{ "BufWinEnter", "*", "setlocal ts=4 sw=4" },
+	-- compile for autopair cr
 	{ "VimEnter", "*", ":PackerCompile" },
+	-- evil_lualine theme
+	{
+		"VimEnter",
+		"*",
+		":luafile /Users/CPea2506/Code/dotfile/lualine/evil_lualine.lua",
+	},
 }

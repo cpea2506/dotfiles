@@ -93,7 +93,7 @@ source $ZSH/oh-my-zsh.sh
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
- export LANG=en_US.UTF-8
+export LANG=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
@@ -114,11 +114,11 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias nano="/opt/homebrew/Cellar/nano/5.8/bin/nano"
+ulimit -n 10240
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 export PATH="/opt/homebrew/opt/curl/bin:$PATH"
 export PATH="/Users/CPea2506/.local/bin:$PATH"
 export PATH="$(yarn global bin):$PATH"
-export PATH="/Users/CPea2506/.config/dotnet:$PATH"
 POWERLEVEL9K_INSTANT_PROMPT=quiet
