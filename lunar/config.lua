@@ -38,34 +38,15 @@ lvim.builtin.telescope.defaults.mappings.i["<C-p>"] = actions.cycle_history_prev
 lvim.builtin.telescope.defaults.mappings.n["<C-j>"] = actions.move_selection_next
 lvim.builtin.telescope.defaults.mappings.n["<C-k>"] = actions.move_selection_previous
 
--- lualine configs
-lvim.builtin.lualine.options = {
-	icons_enabled = true,
-	theme = "onedark",
-	component_separators = { "", "" },
-	section_separators = { "", "" },
-}
-lvim.builtin.lualine.sections = {
-	lualine_a = { "mode" },
-	lualine_b = { "branch" },
-	lualine_c = { "filename", "diff" },
-	lualine_x = { "encoding", "fileformat", "filetype" },
-	lualine_y = { "progress" },
-	lualine_z = { "location" },
-}
-lvim.builtin.lualine.inactive_sections = {
-	lualine_c = { "filename" },
-	lualine_x = { "location" },
-}
-
 lvim.builtin.treesitter.autotag = { enable = true }
 lvim.builtin.treesitter.rainbow = { enable = true }
+lvim.builtin.lualine.options.theme = "evil_lualine"
 
 -- nvim-autopairs
 require("nvim-autopairs.completion.cmp").setup({
 	map_cr = true,
 	map_complete = true,
-	auto_select = true,
+	auto_select = false,
 	insert = false,
 	map_char = {
 		all = "(",
@@ -73,9 +54,13 @@ require("nvim-autopairs.completion.cmp").setup({
 	},
 })
 
--- vim move
+-- vim cmd
 vim.cmd([[
     let g:move_key_modifier = 'C'
+    let g:auto_save = 1
+    let g:auto_save_no_updatetime = 1
+    let g:auto_save_in_insert_mode = 0
+    let g:auto_save_silent = 1
 ]])
 
 -- treesitter config
@@ -106,12 +91,12 @@ lvim.lang.lua.formatters = { { exe = "stylua" } }
 
 -- javascript setting lsp
 lvim.lang.javascript.formatters = { { exe = "prettierd" } }
+lvim.lang.javascript.linters = { { exe = "eslint_d" } }
+lvim.lang.css.linters = { { exe = "stylelint" } }
 lvim.lang.html.formatters = lvim.lang.javascript.formatters
 lvim.lang.css.formatters = lvim.lang.javascript.formatters
 lvim.lang.javascriptreact.formatters = lvim.lang.javascript.formatters
-lvim.lang.javascript.linters = { { exe = "eslint_d" } }
 lvim.lang.javascriptreact.linters = lvim.lang.javascript.linters
-lvim.lang.css.linters = { { exe = "stylelint" } }
 
 require("presence"):setup({
 	-- General options
@@ -131,7 +116,6 @@ require("presence"):setup({
 	workspace_text = "Working on %s",
 	line_number_text = "Line %s out of %s",
 })
-
 --Additional Plugins
 lvim.plugins = {
 	{ "myusuf3/numbers.vim" },
@@ -141,6 +125,7 @@ lvim.plugins = {
 	{ "kyazdani42/treesitter-analyzer" },
 	{ "fratajczak/one-monokai-vim" },
 	{ "voldikss/vim-floaterm" },
+	{ "vim-scripts/vim-auto-save" },
 	{ "andweeb/presence.nvim" },
 	{
 		"simrat39/rust-tools.nvim",
