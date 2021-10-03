@@ -1,13 +1,16 @@
 vim.opt.termguicolors = true
+vim.opt.tabstop = 4
+vim.opt.shiftwidth = 4
+vim.opt.cursorline = true
 vim.opt.hlsearch = true
 vim.opt.smartcase = true
 vim.opt.smartindent = true
 vim.opt.updatetime = 300
 
--- general
-lvim.builtin.nvimtree.setup.view.auto_resize = true
 lvim.builtin.nvimtree.setup.view.side = "right"
-lvim.builtin.lspinstall.active = true
+lvim.builtin.nvimtree.setup.view.auto_resize = true
+lvim.builtin.nvimtree.setup.auto_open = true
+lvim.builtin.nvimtree.hide_dotfiles = false
 lvim.builtin.dashboard.active = true
 lvim.line_wrap_cursor_movement = true
 lvim.debug = true
@@ -15,7 +18,6 @@ lvim.log.level = "warn"
 lvim.colorscheme = "one-monokai"
 lvim.format_on_save = true
 lvim.transparent_window = true
-
 lvim.leader = "space"
 lvim.keys.normal_mode = {
 	-- Navigate buffers
@@ -46,10 +48,6 @@ lvim.builtin.treesitter.rainbow = { enable = true }
 -- vim cmd
 vim.cmd([[
     let g:move_key_modifier = 'C'
-    let g:auto_save = 1
-    let g:auto_save_no_updatetime = 1
-    let g:auto_save_in_insert_mode = 0
-    let g:auto_save_silent = 1
 ]])
 
 -- treesitter config
@@ -62,7 +60,7 @@ require("nvim-treesitter.configs").setup({
 })
 
 -- python setting lsp
-lvim.lang.python.formatters = { { exe = "autopep8" } }
+lvim.lang.python.formatters = { { exe = "black" } }
 lvim.lang.python.linters = { { exe = "flake8" } }
 
 -- rust setting lsp
@@ -108,7 +106,6 @@ lvim.plugins = {
 	{ "kyazdani42/treesitter-analyzer" },
 	{ "fratajczak/one-monokai-vim" },
 	{ "voldikss/vim-floaterm" },
-	{ "vim-scripts/vim-auto-save" },
 	{ "andweeb/presence.nvim" },
 	{
 		"simrat39/rust-tools.nvim",
@@ -130,7 +127,7 @@ lvim.plugins = {
 		end,
 		ft = { "rust", "rs" },
 	},
-	{ "tpope/vim-surround" },
+	{ "tpope/vim-surround", keys = { "c", "d", "y" } },
 	{
 		"tpope/vim-fugitive",
 		cmd = {
@@ -206,14 +203,7 @@ lvim.plugins = {
 
 -- autocommands
 lvim.autocommands.custom_groups = {
-	-- set tabstop
-	{ "BufWinEnter", "*", "setlocal ts=4 sw=4" },
 	-- compile for autopair cr
 	{ "VimEnter", "*", ":PackerCompile" },
-	-- evil_lualine theme
-	{
-		"VimEnter",
-		"*",
-		":luafile /Users/CPea2506/Code/dotfile/lualine/evil_lualine.lua",
-	},
+	{ "VimEnter", "*", ":lua require'lualine.themes.evil_lualine'" },
 }
