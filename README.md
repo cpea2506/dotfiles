@@ -1,3 +1,3 @@
 # dotfile
 
-Here is dotfile for setting up my mac
+Here is my dotfile for setting up my mac
