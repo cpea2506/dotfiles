@@ -1,10 +1,10 @@
 env:
- TERM: alacritty
+  TERM: alacritty
 
 window:
   decorations: buttonless
   startup_mode: Windowed
-  opacity: 0.8
+#  opacity: 0.8
 
 scrolling:
   history: 10000
@@ -12,64 +12,63 @@ scrolling:
 
 font:
   normal:
-    family: "MesloLGS NF" 
+    family: "MesloLGS NF"
     style: Regular
   bold:
-    family: "MesloLGS NF" 
+    family: "MesloLGS NF"
     style: Bold
   italic:
-    family: "MesloLGS NF"  
+    family: "MesloLGS NF"
     style: Italic
   bold_italic:
-    family: "MesloLGS NF"  
+    family: "MesloLGS NF"
     style: Bold Italic
-  size: 11.0
+  size: 12.0
   use_thin_strokes: true
 
 draw_bold_text_with_bright_colors: true
 
-background_opacity: 0.8
+background_opacity: 0.89
 
 colors:
   primary:
-    background: '#18191a'
-    foreground: '#eceef0'
+    background: "#18191a"
+    foreground: "#eceef0"
   cursor:
-    text: '#000000'
-    cursor: '#ee2c68'
+    text: "#000000"
+    cursor: "#ee2c68"
   selection:
-    text: '#f0f0f0'    
-    background: '#25b1f5'
+    text: "#f0f0f0"
+    background: "#25b1f5"
 
   # Normal colors
   normal:
-    black:   '#000000'
-    red:     '#ee2c68'
-    green:   '#3dd177'
-    yellow:  '#ffc900'
-    blue:    '#00b0ff'
-    magenta: '#ff3f80'
-    cyan:    '#64fcda'
-    white:   '#fefefe'
+    black: "#000000"
+    red: "#ee2c68"
+    green: "#3dd177"
+    yellow: "#ffc900"
+    blue: "#00b0ff"
+    magenta: "#ff3f80"
+    cyan: "#64fcda"
+    white: "#fefefe"
 
   # Bright colors
   bright:
-     black:   '#b0bec4'
-     red:     '#d54e53'
-     green:   '#82f4a2'
-     yellow:  '#ffe47e'
-     blue:    '#80d7fe'
-     magenta: '#ff80ab'
-     cyan:    '#a7fdeb'
-     white:   '#fefefe'
-
+    black: "#b0bec4"
+    red: "#d54e53"
+    green: "#82f4a2"
+    yellow: "#ffe47e"
+    blue: "#80d7fe"
+    magenta: "#ff80ab"
+    cyan: "#a7fdeb"
+    white: "#fefefe"
 
 # Bell
 # The bell is rung every time the BEL control character is received.
 bell:
   animation: EaseOutExpo
   duration: 0
-  color: '#ffffff'
+  color: "#ffffff"
 
 cursor:
   style:
@@ -85,10 +84,10 @@ mouse:
   hide_when_typing: true
 
 key_bindings:
-  - { key: V,              mods: Command,                    action: Paste                 }
-  - { key: C,              mods: Command,                    action: Copy                  }
-  - { key: Q,              mods: Command,                    action: Quit                  }
-  - { key: N,              mods: Command,                    action: SpawnNewInstance      }
+  - { key: V, mods: Command, action: Paste }
+  - { key: C, mods: Command, action: Copy }
+  - { key: Q, mods: Command, action: Quit }
+  - { key: N, mods: Command, action: SpawnNewInstance }
 
 debug:
   log_level: Warn

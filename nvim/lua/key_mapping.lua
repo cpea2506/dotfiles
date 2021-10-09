@@ -1,27 +1,31 @@
-local map = function(key)
-  local opts = {noremap = true}
-  for i, v in pairs(key) do
-    if type(i) == 'string' then opts[i] = v end
-  end
+local keymap = function(keys)
+	local modes = {
+		normal = 'n',
+		insert = 'i',
+		visual = 'v',
+	}
 
-  -- basic support for buffer-scoped keybindings
-  local buffer = opts.buffer
-  opts.buffer = nil
+	for mode, map in pairs(keys) do
+		local key_mode = modes[mode]
+		local opts = { noremap = true, silent = true }
 
-  if buffer then
-    vim.api.nvim_buf_set_keymap(0, key[1], key[2], key[3], opts)
-  else
-    vim.api.nvim_set_keymap(key[1], key[2], key[3], opts)
+		for key, value in pairs(map) do
+			vim.api.nvim_set_keymap(key_mode, key, value, opts)
+		end
+	end
 end
-end
 
-map {'n', '<C-s>', ':w<CR>'}
-map {'n', '<C-b>', ':NvimTreeToggle<CR>'}
-map {'n', '<Tab>', ':BufferNext<CR>'}
-map {'n', '<S-Tab>', ':BufferPrevious<CR>'}
-map {'n', '<C-e>', ':BufferClose<CR>'}
-map {'n', '<C-t>', ':FloatermToggle<CR>'}
-map {'n', '<C-p>', ':Telescope find_files<CR>'}
+keymap({
+	normal = {
+		["<C-s>"] = ":w<CR>",
+		["<C-b>"] = ":NvimTreeToggle<CR>",
+		["<Tab>"] = ":BufferNext<CR>",
+		["<S-Tab>"] = ":BufferPrevious<CR>",
+		["<C-e>"] = ":BufferClose<CR>",
+		["<C-t>"] = ":FloatermToggle<CR>",
+		["<C-p>"] = ":Telescope find_files<CR>",
+	},
+})
 
 -- vim move
-vim.g['move_key_modifier'] = 'C'
+vim.g["move_key_modifier"] = "C"
