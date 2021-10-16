@@ -4,7 +4,7 @@ env:
 window:
   decorations: buttonless
   startup_mode: Windowed
-#  opacity: 0.8
+  opacity: 0.85
 
 scrolling:
   history: 10000
@@ -27,8 +27,6 @@ font:
   use_thin_strokes: true
 
 draw_bold_text_with_bright_colors: true
-
-background_opacity: 0.89
 
 colors:
   primary:
