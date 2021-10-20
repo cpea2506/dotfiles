@@ -2,12 +2,16 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+POWERLEVEL9K_INSTANT_PROMPT=quiet
+
 export ZSH="/Users/CPea2506/.oh-my-zsh"
 ZSH_THEME="powerlevel10k/powerlevel10k"
 plugins=(
 	zsh-syntax-highlighting
 	zsh-autosuggestions
 	zsh-completions
+	nix-shell
     git
     cargo
     autojump
@@ -17,8 +21,6 @@ source $ZSH/oh-my-zsh.sh
 export LANG=en_US.UTF-8
 ulimit -n 10240
 
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-POWERLEVEL9K_INSTANT_PROMPT=quiet
 export PATH="/opt/homebrew/opt/curl/bin:$PATH"
 export PATH="/Users/CPea2506/.local/bin:$PATH"
 export PATH="$(yarn global bin):$PATH"

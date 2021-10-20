@@ -1,0 +1,7 @@
+eval "$(/opt/homebrew/bin/brew shellenv)"
+. "$HOME/.cargo/env"
+
+export PATH="/opt/homebrew/opt/curl/bin:$PATH"
+export PATH="/Users/CPea2506/.local/bin:$PATH"
+export PATH="$HOME/.local/bin:$PATH"
+export PATH="$PATH:$(yarn global bin)"
