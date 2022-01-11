@@ -9,7 +9,6 @@ $vcsh\
 $git_branch\
 $git_commit\
 $git_state\
-$git_metrics\
 $git_status\
 $hg_branch\
 $docker_context\
@@ -75,6 +74,3 @@ style = "fg:#00b0ff"
 [git_branch]
 always_show_remote = true
 style = "fg:#3dd177"
-
-[git_metrics]
-disabled = false
