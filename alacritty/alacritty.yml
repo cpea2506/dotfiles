@@ -25,7 +25,7 @@ font:
   bold_italic:
     family: "Hack Nerd Font"
     style: Bold Italic
-  size: 11.0
+  size: 12.0
   ligatures: true
   use_thin_strokes: true
 
@@ -83,3 +83,4 @@ mouse:
 
 key_bindings:
   - { key: N, mods: Command, action: SpawnNewInstance }
+  - { key: N, mods: Command|Shift, action: CreateNewWindow }
