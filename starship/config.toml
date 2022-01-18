@@ -1,4 +1,3 @@
-# Which is equivalent to
 format = """
 $username\
 $hostname\
@@ -53,6 +52,7 @@ $line_break\
 $jobs\
 $character"""
 
+# display command execution time
 right_format = """$cmd_duration"""
 
 # Disable the blank line at the start of the prompt
@@ -62,15 +62,15 @@ add_newline = false
 min_time = 0
 show_milliseconds = true
 format="[$duration]($style)"
-style = "bold cyan"
+style = "bold fg:#64fcda" #cyan
 
 [character] 
-success_symbol = "[ ](fg:#3dd177)"     
-error_symbol = "[ ](fg:#ff6633)"
+success_symbol = "[ ](fg:#3dd177)" #green     
+error_symbol = "[ ](fg:#ff6633)" # orange
 
 [directory]
-style = "fg:#00b0ff"
+style = "fg:#00b0ff" # blue
 
 [git_branch]
 always_show_remote = true
-style = "fg:#3dd177"
+style = "fg:#3dd177" # green
