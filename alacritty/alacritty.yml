@@ -18,16 +18,16 @@ font:
     style: Medium
   bold:
     family: "SFMono Nerd Font"
-    style: Bold
+    style: Semibold
   italic:
     family: "SFMono Nerd Font"
-    style: Italic
+    style: Medium Italic
   bold_italic:
     family: "SFMono Nerd Font"
-    style: Bold Italic
+    style: Semibold Italic
   size: 13.0
-  ligatures: true
   use_thin_strokes: true
+  builtin_box_drawing: true
 
 draw_bold_text_with_bright_colors: true
 
@@ -84,3 +84,4 @@ mouse:
 key_bindings:
   - { key: N, mods: Command, action: SpawnNewInstance }
   - { key: N, mods: Command|Shift, action: CreateNewWindow }
+
