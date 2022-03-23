@@ -25,6 +25,9 @@ font:
   bold_italic:
     family: "SFMono Nerd Font"
     style: Semibold Italic
+  offset:
+    x: 0
+    y: 1
   size: 13.0
   use_thin_strokes: true
   builtin_box_drawing: true
