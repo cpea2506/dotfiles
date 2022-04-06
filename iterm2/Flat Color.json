@@ -1,5 +1,5 @@
 {
-  "ASCII Ligatures" : true,
+  "Custom Directory" : "Advanced",
   "Working Directory" : "\/Users\/CPea2506",
   "Prompt Before Closing 2" : false,
   "Selected Text Color" : {
@@ -348,7 +348,7 @@
   },
   "Ambiguous Double Width" : false,
   "Blur Radius" : 20,
-  "Cursor Type" : 2,
+  "Cursor Type" : 0,
   "Ansi 0 Color" : {
     "Red Component" : 0,
     "Color Space" : "sRGB",
@@ -358,7 +358,7 @@
   },
   "AWDS Pane Directory" : "",
   "Blur" : false,
-  "Normal Font" : "CaskaydiaCove-SemiBold 12",
+  "Normal Font" : "LigaSFMonoNerdFont-Semibold 13",
   "Application Keypad Allowed" : false,
   "Vertical Spacing" : 1,
   "Ansi 7 Color" : {
@@ -404,7 +404,7 @@
   "Screen" : -2,
   "Initial Use Transparency" : true,
   "AWDS Window Option" : "No",
-  "Non Ascii Font" : "DroidSansMonoNerdFontComplete- 12",
+  "Non Ascii Font" : "LigaSFMonoNerdFont-Semibold 13",
   "Ansi 13 Color" : {
     "Red Component" : 1,
     "Color Space" : "sRGB",
@@ -415,7 +415,7 @@
   "Columns" : 80,
   "Unicode Normalization" : 3,
   "Visual Bell" : true,
-  "Custom Directory" : "Advanced",
+  "ASCII Ligatures" : false,
   "Thin Strokes" : 4,
   "Ansi 5 Color" : {
     "Red Component" : 1,
