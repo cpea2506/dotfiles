@@ -57,20 +57,21 @@ right_format = """$cmd_duration"""
 
 # Disable the blank line at the start of the prompt
 add_newline = false
+command_timeout = 1000
 
 [cmd_duration]
-min_time = 0
+min_time = 1
 show_milliseconds = true
-format="[$duration]($style)"
-style = "bold fg:#64fcda" #cyan
+format = "[$duration]($style)"
+style = "bold fg:#64fcda"      #cyan
 
-[character] 
+[character]
 success_symbol = "[ ](fg:#3dd177)" #green     
-error_symbol = "[ ](fg:#ff6633)" # orange
+error_symbol = "[ ](fg:#ff6633)"   # orange
 
 [directory]
 style = "fg:#00b0ff" # blue
 
 [git_branch]
 always_show_remote = true
-style = "fg:#3dd177" # green
+style = "fg:#3dd177"      # green
