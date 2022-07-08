@@ -1,5 +1,4 @@
 export PATH="$HOME/.local/bin:$PATH"
-export STARSHIP_CONFIG=$HOME/.config/starship/config.toml
 export HOMEBREW_NO_ENV_HINTS=true
 
 # pnpm
