@@ -29,7 +29,6 @@ font:
     x: 0
     y: 1
   size: 13.0
-  use_thin_strokes: true
   builtin_box_drawing: true
 
 draw_bold_text_with_bright_colors: true
@@ -87,4 +86,3 @@ mouse:
 key_bindings:
   - { key: N, mods: Command, action: SpawnNewInstance }
   - { key: N, mods: Command|Shift, action: CreateNewWindow }
-
