@@ -1,0 +1,8 @@
+# Display the time in step titles
+display_time = true
+
+# Cleanup temporary or old files
+cleanup = true
+
+[brew]
+greedy_cask = true

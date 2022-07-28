@@ -1,0 +1,8 @@
+[user]
+	name = CPea
+	email = vienpro2506@gmail.com
+[core]
+	excludesfile = /Users/CPea2506/.gitignore_global
+    editor = lvim
+[init]
+	defaultBranch = main
