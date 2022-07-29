@@ -1,5 +1,5 @@
 function __install() {
-    PLUGIN_DIR="zsh_plugins"
+    local PLUGIN_DIR="zsh_plugins"
 
     if [[ -d $ZDOTDIR/$PLUGIN_DIR/$2 ]]; then
         source $ZDOTDIR/$PLUGIN_DIR/$2/$2.plugin.zsh || \
@@ -26,11 +26,27 @@ function mkcd() {
   fi
 }
 
+function help() {
+    "$@" --help 2>&1 | bat --plain --language=help
+}
+
 function gccd() {
   command git clone --recurse-submodules "$@"
   [[ -d "$_" ]] && cd "$_" || cd "${${_:t}%.git}"
 }
 
-function help() {
-    "$@" --help 2>&1 | bat --plain --language=help
+function gi() {
+  local api="https://www.toptal.com/developers/gitignore/api"
+  local files=
+
+  if [[ ! -z "$1" ]]; then
+    files=$(echo "$@" | sed "s/[[:blank:]]//g")
+  else
+    files=$(curl -s $api/list | tr "," "\n" | fzf -m --cycle | tr "\n" "," | sed "s/,$//g")
+  fi
+
+  if [[ -n $files ]]; then
+    command curl -sLo .gitignore $api/$files
+    echo ".gitignore file for $files created"
+  fi
 }

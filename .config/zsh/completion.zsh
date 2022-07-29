@@ -1,3 +1,7 @@
+# generate completion for rust tools
+# rustup completions zsh cargo > ~/.local/share/zsh/site-functions/_cargo
+# rustup completions zsh rustup > ~/.local/share/zsh/site-functions/_rustup
+
 zstyle ':completion:*' menu select
 zmodload zsh/complist
 
