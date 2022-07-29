@@ -1,0 +1,12 @@
+# config
+*zwc*
+*zcompdump*
+.zsh_history
+.zcalc_history
+.zsh_history
+zsh_plugins/
+.zcompcache/
+.zsh_sessions/
+lvim*/
+configstore/
+brewfile/
