@@ -1,3 +1,12 @@
+# Don't ask for confirmations
+assume_yes = true
+
+# disable steps
+disable = ["pip3"]
+
+# Do not ask to retry failed steps
+no_retry = true
+
 # Display the time in step titles
 display_time = true
 
