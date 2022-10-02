@@ -10,7 +10,7 @@ local config = {
 	window_background_opacity = 0.85,
 	hide_tab_bar_if_only_one_tab = true,
 	default_cursor_style = "SteadyUnderline",
-	window_padding = { left = "5px", right = "5px" },
+	window_padding = { bottom = "5" },
 	font = wezterm.font("Liga SFMono Nerd Font"),
 }
 
