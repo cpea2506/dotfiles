@@ -10,3 +10,9 @@
 "ripgrep 13.0.0 (registry+https://github.com/rust-lang/crates.io-index)" = ["rg"]
 "selene 0.21.1 (registry+https://github.com/rust-lang/crates.io-index)" = ["selene"]
 "stylua 0.15.1 (registry+https://github.com/rust-lang/crates.io-index)" = ["stylua"]
+"wasm-bindgen-cli 0.2.83 (registry+https://github.com/rust-lang/crates.io-index)" = [
+    "wasm-bindgen",
+    "wasm-bindgen-test-runner",
+    "wasm2es6js",
+]
+"wasm-server-runner 0.3.0 (registry+https://github.com/rust-lang/crates.io-index)" = ["wasm-server-runner"]

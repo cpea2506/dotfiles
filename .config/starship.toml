@@ -59,19 +59,31 @@ right_format = """$cmd_duration"""
 add_newline = false
 command_timeout = 1000
 
+
+palette = "dark_flat"
+
+[palettes.dark_flat]
+green = "#3dd177"
+cyan = "#64fcda"
+orange = "#ff6633"
+aqua = "#00b0ff"
+
 [cmd_duration]
 min_time = 1
 show_milliseconds = true
 format = "[$duration]($style)"
-style = "bold fg:#64fcda"      #cyan
+style = "bold cyan"
 
 [character]
-success_symbol = "[ ](fg:#3dd177)" #green     
-error_symbol = "[ ](fg:#ff6633)"   # orange
+success_symbol = "[ ](green)"
+error_symbol = "[ ](orange)"
 
 [directory]
-style = "fg:#00b0ff" # blue
+style = "bold aqua"
 
 [git_branch]
 always_show_remote = true
-style = "fg:#3dd177"      # green
+style = "green"
+
+[lua]
+symbol = " "

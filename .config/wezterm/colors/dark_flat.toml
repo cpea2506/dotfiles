@@ -27,8 +27,26 @@ cursor_fg = "#000000"
 selection_bg = "#25b1f5"
 selection_fg = "#f0f0f0"
 
+[colors.tab_bar]
+background = "#18191a"
+inactive_tab_edge = "#00b0ff"
+
+[colors.tab_bar.active_tab]
+bg_color = "#000000"
+fg_color = "#ffffff"
+intensity = "Bold"
+italic = true
+
+[colors.tab_bar.inactive_tab]
+bg_color = "#999999"
+fg_color = "#000000"
+
+[colors.tab_bar.new_tab]
+bg_color = "#313244"
+fg_color = "#ffffff"
+
 [colors.indexed]
 
 [metadata]
 name = "Dark Flat"
-origin_url = "https://github.com/QuentinWatt/dark-flat-iterm-colors"
+origin_url = "https://github.com/cpea2506/dark-flat-wezterm"
