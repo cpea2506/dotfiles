@@ -12,6 +12,7 @@ local config = {
 	window_background_opacity = 0.85,
 	window_decorations = "RESIZE",
 	window_padding = { bottom = "5" },
+	show_new_tab_button_in_tab_bar = false,
 }
 
 return config
