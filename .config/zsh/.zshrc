@@ -1,18 +1,22 @@
-source $ZDOTDIR/functions.zsh
+eval "$(starship init zsh)"
+eval "$(zoxide init --cmd cd zsh)"
 
-__install "zsh-users" "zsh-autosuggestions"
-__install "zsh-users" "zsh-syntax-highlighting"
-__install "kazhala" "dotbare"
+# enable zap - minimal plugin manager
+[[ -f "$HOME/.local/share/zap/zap.zsh" ]] && source "$HOME/.local/share/zap/zap.zsh"
 
-shards=(aliases completion prompt exports)
-__use $shards[@]
+plug "kazhala/dotbare"
+plug "zsh-users/zsh-autosuggestions"
+plug "zsh-users/zsh-syntax-highlighting"
+plug "zsh-users/zsh-completions"
 
 source "$HOME/.cargo/env"
 
-eval "$(zoxide init --cmd cd zsh)"
-eval "$(starship init zsh)"
+source $ZDOTDIR/functions.zsh
+source $ZDOTDIR/aliases.zsh
+source $ZDOTDIR/exports.zsh
+source $ZDOTDIR/completion.zsh
 
-if [ -f $(brew --prefix)/etc/brew-wrap ];then
+if [[ -f $(brew --prefix)/etc/brew-wrap ]]; then
   source $(brew --prefix)/etc/brew-wrap
 
    _post_brewfile_update () {

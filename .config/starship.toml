@@ -53,12 +53,11 @@ $jobs\
 $character"""
 
 # display command execution time
-right_format = """$cmd_duration"""
+right_format = "$cmd_duration"
 
 # Disable the blank line at the start of the prompt
 add_newline = false
 command_timeout = 1000
-
 
 palette = "dark_flat"
 

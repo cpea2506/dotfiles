@@ -1,5 +1,3 @@
-alias ~=cd
-alias ..="cd .."
 alias cl=clear 
 alias lg=lazygit
 alias neo=neofetch
@@ -21,9 +19,9 @@ alias cgt="cargo test"
 alias cgl="cargo clippy"
 
 # search
-alias ls="exa -a --color=always --icons --group-directories-first"
-alias ll="exa -la --color=always --icons --group-directories-first"
-alias tree="exa -a --color=always --icons --group-directories-first -T"
+alias ls="exa -a --icons --group-directories-first"
+alias ll="ls -lha --git"
+alias tree="ls --tree --level=2"
 
 # system command 
 alias cat=bat
