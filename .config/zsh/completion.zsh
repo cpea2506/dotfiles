@@ -9,8 +9,8 @@ else
 fi
 
 # completions script from brew 
-ZSH_COMPLETION=$(brew --prefix 2>/dev/null)/share/zsh/site-functions
-[[ $? -eq 0 && -d $ZSH_COMPLETION ]] && FPATH="$ZSH_COMPLETION:$FPATH"
+ZSH_COMP_DIR=$(brew --prefix 2>/dev/null)/share/zsh/site-functions
+[[ $? -eq 0 && -d $ZSH_COMP_DIR ]] && FPATH="$ZSH_COMP_DIR:$FPATH"
 
 # Should be called before compinit
 zmodload zsh/complist
@@ -54,7 +54,6 @@ zstyle ':completion:*' cache-path "$HOME/.cache/zsh/.zcompcache"
 zstyle ':completion:*' complete true
 
 zle -C alias-expension complete-word _generic
-bindkey '^Xa' alias-expension
 zstyle ':completion:alias-expension:*' completer _expand_alias
 
 # Allow you to select in a menu
@@ -94,3 +93,4 @@ bindkey -M menuselect '^h' vi-backward-char
 bindkey -M menuselect '^k' vi-up-line-or-history
 bindkey -M menuselect '^l' vi-forward-char
 bindkey -M menuselect '^j' vi-down-line-or-history
+bindkey '^Xa' alias-expension

@@ -2,7 +2,6 @@ alias cl=clear
 alias lg=lazygit
 alias neo=neofetch
 
-
 # git
 alias gcl="git clone --recurse-submodules"
 alias gcm="git commit -m"
