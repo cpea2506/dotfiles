@@ -2,7 +2,7 @@
 assume_yes = true
 
 # disable steps
-disable = ["pip3"]
+disable = ["pip3", "containers"]
 
 # Do not ask to retry failed steps
 no_retry = true
