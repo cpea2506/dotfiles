@@ -8,8 +8,7 @@ plug "kazhala/dotbare"
 plug "zsh-users/zsh-autosuggestions"
 plug "zsh-users/zsh-syntax-highlighting"
 plug "zsh-users/zsh-completions"
-
-source "$HOME/.cargo/env"
+plug "wintermi/zsh-rust"
 
 source $ZDOTDIR/functions.zsh
 source $ZDOTDIR/aliases.zsh

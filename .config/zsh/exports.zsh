@@ -1,6 +1,5 @@
 export PATH="$HOME/.local/bin:$PATH"
 export EDITOR="lvim"
-export HOMEBREW_NO_ENV_HINTS=true
 
 # dotbare
 export DOTBARE_DIR="$HOME/Develop/dotfiles"

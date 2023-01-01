@@ -1,13 +1,3 @@
-# generate completion for rust tools
-ZSH_COMP_DIR=$HOME/.local/share/zsh/site-functions
-if [[ ! -d $ZSH_COMP_DIR && (( $+commands[rustup] )) ]]; then
-    mkdir -p $ZSH_COMP_DIR
-    rustup completions zsh cargo > $ZSH_COMP_DIR/_cargo
-    rustup completions zsh rustup > $ZSH_COMP_DIR/_rustup
-else
-    FPATH="$ZSH_COMP_DIR:$FPATH"
-fi
-
 # completions script from brew 
 ZSH_COMP_DIR=$(brew --prefix 2>/dev/null)/share/zsh/site-functions
 [[ $? -eq 0 && -d $ZSH_COMP_DIR ]] && FPATH="$ZSH_COMP_DIR:$FPATH"
@@ -89,8 +79,9 @@ zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 
 zstyle ':completion:*' keep-prefix true
 
 # menu select vi-like
-bindkey -M menuselect '^h' vi-backward-char
-bindkey -M menuselect '^k' vi-up-line-or-history
-bindkey -M menuselect '^l' vi-forward-char
-bindkey -M menuselect '^j' vi-down-line-or-history
-bindkey '^Xa' alias-expension
+if [[ -o menucomplete ]]; then
+    bindkey -M menuselect '^h' vi-backward-char
+    bindkey -M menuselect '^k' vi-up-line-or-history
+    bindkey -M menuselect '^l' vi-forward-char
+    bindkey -M menuselect '^j' vi-down-line-or-history
+fi
