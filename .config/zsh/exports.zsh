@@ -1,8 +1,11 @@
 export PATH="$HOME/.local/bin:$PATH"
 export EDITOR="lvim"
 
+# lazygit
+export CONFIG_DIR="$HOME/.config/lazygit"
+
 # dotbare
-export DOTBARE_DIR="$HOME/Develop/dotfiles"
+export DOTBARE_DIR="$HOME/Tech/dotfiles"
 export DOTBARE_TREE="$HOME"
 
 # fzf
