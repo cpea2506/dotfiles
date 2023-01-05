@@ -9,6 +9,7 @@ plug "zsh-users/zsh-autosuggestions"
 plug "zsh-users/zsh-syntax-highlighting"
 plug "zsh-users/zsh-completions"
 plug "wintermi/zsh-rust"
+plug "wintermi/zsh-brew"
 
 source $ZDOTDIR/functions.zsh
 source $ZDOTDIR/aliases.zsh

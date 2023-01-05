@@ -1,7 +1,3 @@
-# completions script from brew 
-ZSH_COMP_DIR=$(brew --prefix 2>/dev/null)/share/zsh/site-functions
-[[ $? -eq 0 && -d $ZSH_COMP_DIR ]] && FPATH="$ZSH_COMP_DIR:$FPATH"
-
 # Should be called before compinit
 zmodload zsh/complist
 
