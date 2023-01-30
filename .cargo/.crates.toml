@@ -8,7 +8,7 @@
 "cargo-watch 8.2.1 (registry+https://github.com/rust-lang/crates.io-index)" = ["cargo-watch"]
 "fd-find 8.6.0 (registry+https://github.com/rust-lang/crates.io-index)" = ["fd"]
 "ripgrep 13.0.0 (registry+https://github.com/rust-lang/crates.io-index)" = ["rg"]
-"selene 0.23.1 (registry+https://github.com/rust-lang/crates.io-index)" = ["selene"]
+"selene 0.24.0 (registry+https://github.com/rust-lang/crates.io-index)" = ["selene"]
 "stylua 0.15.3 (registry+https://github.com/rust-lang/crates.io-index)" = ["stylua"]
 "trunk 0.16.0 (registry+https://github.com/rust-lang/crates.io-index)" = ["trunk"]
 "twiggy 0.7.0 (registry+https://github.com/rust-lang/crates.io-index)" = ["twiggy"]

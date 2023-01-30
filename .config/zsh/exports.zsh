@@ -1,6 +1,9 @@
 export PATH="$HOME/.local/bin:$PATH"
 export EDITOR="lvim"
 
+# homebrew
+export HOMEBREW_NO_INSTALL_FROM_API=1
+
 # lazygit
 export CONFIG_DIR="$HOME/.config/lazygit"
 
