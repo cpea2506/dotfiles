@@ -18,3 +18,6 @@ export FZF_DEFAULT_OPTS="--layout=reverse --color=hl:#c678dd,hl+:#c678dd,info:gr
 export PNPM_HOME="$HOME/Library/pnpm"
 export PATH="$PNPM_HOME:$PATH"
 # pnpm end
+
+#vcpkg
+export VCPKG_ROOT="$HOME/vcpkg"
