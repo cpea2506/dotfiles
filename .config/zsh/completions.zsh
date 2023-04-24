@@ -1,11 +1,3 @@
-setopt MENU_COMPLETE        # Automatically highlight first element of completion menu
-setopt AUTO_LIST            # Automatically list choices on ambiguous completion.
-setopt COMPLETE_IN_WORD     # Complete from both ends of a word.
-setopt AUTO_CD              # Automatically cd into directory without cd
-setopt CORRECT              # Correct mistyped command
-setopt CORRECT_ALL
-setopt APPEND_HISTORY
-
 # Should be called before compinit
 zmodload zsh/complist
 
