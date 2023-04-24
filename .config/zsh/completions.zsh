@@ -1,3 +1,11 @@
+setopt MENU_COMPLETE        # Automatically highlight first element of completion menu
+setopt AUTO_LIST            # Automatically list choices on ambiguous completion.
+setopt COMPLETE_IN_WORD     # Complete from both ends of a word.
+setopt AUTO_CD              # Automatically cd into directory without cd
+setopt CORRECT              # Correct mistyped command
+setopt CORRECT_ALL
+setopt APPEND_HISTORY
+
 # Should be called before compinit
 zmodload zsh/complist
 
@@ -18,14 +26,6 @@ _dotbare_completion_cmd
 _dotbare_completion_git
 
 _comp_options+=(globdots) # With hidden files
-
-# setopt GLOB_COMPLETE      # Show autocompletion menu with globs
-setopt MENU_COMPLETE        # Automatically highlight first element of completion menu
-setopt AUTO_LIST            # Automatically list choices on ambiguous completion.
-setopt COMPLETE_IN_WORD     # Complete from both ends of a word.
-setopt AUTO_CD              # Automatically cd into directory without cd
-setopt CORRECT              # Correct mistyped command
-setopt CORRECT_ALL
 
 # Ztyle pattern
 # :completion:<function>:<completer>:<command>:<argument>:<tag>
@@ -81,3 +81,9 @@ if [[ -o menucomplete ]]; then
     bindkey -M menuselect '^l' vi-forward-char
     bindkey -M menuselect '^j' vi-down-line-or-history
 fi
+
+# history-substring-search
+bindkey '^[[A' history-substring-search-up
+bindkey '^[[B' history-substring-search-down
+bindkey "$terminfo[kcuu1]" history-substring-search-up
+bindkey "$terminfo[kcud1]" history-substring-search-down

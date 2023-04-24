@@ -8,13 +8,14 @@ plug "kazhala/dotbare"
 plug "zsh-users/zsh-autosuggestions"
 plug "zsh-users/zsh-syntax-highlighting"
 plug "zsh-users/zsh-completions"
+plug "zsh-users/zsh-history-substring-search"
 plug "wintermi/zsh-rust"
 plug "wintermi/zsh-brew"
 
 source $ZDOTDIR/functions.zsh
 source $ZDOTDIR/aliases.zsh
 source $ZDOTDIR/exports.zsh
-source $ZDOTDIR/completion.zsh
+source $ZDOTDIR/completions.zsh
 
 if [[ -f $(brew --prefix)/etc/brew-wrap ]]; then
   source $(brew --prefix)/etc/brew-wrap

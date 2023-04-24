@@ -21,3 +21,6 @@ export PATH="$PNPM_HOME:$PATH"
 
 # llvm
 export PATH="/opt/homebrew/opt/llvm/bin:$PATH"
+
+# docker
+export PATH="$HOME/.docker/bin:$PATH"
