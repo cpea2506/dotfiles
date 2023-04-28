@@ -67,12 +67,10 @@ zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 
 zstyle ':completion:*' keep-prefix true
 
 # menu select vi-like
-if [[ -o menucomplete ]]; then
-    bindkey -M menuselect '^h' vi-backward-char
-    bindkey -M menuselect '^k' vi-up-line-or-history
-    bindkey -M menuselect '^l' vi-forward-char
-    bindkey -M menuselect '^j' vi-down-line-or-history
-fi
+bindkey -M menuselect '^h' vi-backward-char
+bindkey -M menuselect '^k' vi-up-line-or-history
+bindkey -M menuselect '^l' vi-forward-char
+bindkey -M menuselect '^j' vi-down-line-or-history
 
 # history-substring-search
 bindkey '^[[A' history-substring-search-up
