@@ -16,6 +16,6 @@ git:
     mode: "auto"
 notARepository: "quit"
 os:
-  editCommand: "lvim"
+  edit: "lvim"
 update:
   days: 7

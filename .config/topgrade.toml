@@ -18,5 +18,5 @@ greedy_cask = true
 autoremove = true
 
 [commands]
-"Wezterm upgrade" = "brew upgrade --cask wezterm-nightly --no-quarantine --greedy-latest"
-"Neovim upgrade" = "brew upgrade neovim --fetch-head"
+"Wezterm update" = "brew upgrade --cask wezterm-nightly --no-quarantine --greedy-latest"
+"Neovim update" = "brew upgrade neovim --fetch-head"
