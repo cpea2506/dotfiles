@@ -1,5 +1,5 @@
 eval "$(starship init zsh)"
-eval "$(zoxide init zsh --no-cmd --cmd cd)"
+eval "$(zoxide init zsh --cmd cd)"
 eval "$(fnm env --use-on-cd)"
 
 [[ -f "$HOME/.local/share/zap/zap.zsh" ]] && source "$HOME/.local/share/zap/zap.zsh"
