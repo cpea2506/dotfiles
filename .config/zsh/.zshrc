@@ -11,6 +11,7 @@ plug "zsh-users/zsh-completions"
 plug "zsh-users/zsh-history-substring-search"
 plug "wintermi/zsh-rust"
 plug "wintermi/zsh-brew"
+plug "hlissner/zsh-autopair"
 
 for file in $ZDOTDIR/*.zsh; do
     source "$file"
