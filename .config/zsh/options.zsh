@@ -3,7 +3,6 @@ setopt AUTO_LIST            # Automatically list choices on ambiguous completion
 setopt COMPLETE_IN_WORD     # Complete from both ends of a word.
 setopt AUTO_CD              # Automatically cd into directory without cd
 setopt CORRECT              # Correct mistyped command
-setopt CORRECT_ALL
 setopt APPEND_HISTORY
 setopt SHARE_HISTORY        # Share history between all sessions.
 setopt HIST_IGNORE_DUPS     # Don't record an entry that was just recorded again.
