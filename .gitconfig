@@ -2,7 +2,7 @@
     ui = auto
 [user]
 	name = CPea
-	email = vienpro2506@gmail.com
+	email = cpea2506@gmail.com
 [core]
 	excludesfile = ~/.gitignore_global
     editor = lvim

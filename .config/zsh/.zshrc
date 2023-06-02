@@ -1,6 +1,3 @@
-eval "$(starship init zsh)"
-eval "$(zoxide init zsh --cmd cd)"
-
 [[ -f "$HOME/.local/share/zap/zap.zsh" ]] && source "$HOME/.local/share/zap/zap.zsh"
 
 plug "kazhala/dotbare"
@@ -15,6 +12,9 @@ plug "hlissner/zsh-autopair"
 for file in $ZDOTDIR/*.zsh; do
     source "$file"
 done
+
+eval "$(starship init zsh)"
+eval "$(zoxide init zsh --cmd cd)"
 
 if [[ -f $(brew --prefix)/etc/brew-wrap ]]; then
   source $(brew --prefix)/etc/brew-wrap
