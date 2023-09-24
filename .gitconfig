@@ -10,8 +10,8 @@
 	defaultBranch = main
 [pull]
 	rebase = true
-[includeIf "gitdir:~/Work/"]
-    path = ~/Work/.gitconfig
+[includeIf "gitdir:~/Work/Projects/"]
+    path = ~/Work/Projects/.gitconfig
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f

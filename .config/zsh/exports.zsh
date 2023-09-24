@@ -8,7 +8,7 @@ export HOMEBREW_NO_INSTALL_FROM_API=1
 export CONFIG_DIR="$HOME/.config/lazygit"
 
 # dotbare
-export DOTBARE_DIR="$HOME/Tech/dotfiles"
+export DOTBARE_DIR="$HOME/Developer/dotfiles"
 export DOTBARE_TREE="$HOME"
 
 # fzf
@@ -18,6 +18,3 @@ export FZF_DEFAULT_OPTS="--layout=reverse --color=hl:#c678dd,hl+:#c678dd,info:gr
 export PNPM_HOME="$HOME/Library/pnpm"
 export PATH="$PNPM_HOME:$PATH"
 # pnpm end
-
-# llvm
-export PATH="/opt/homebrew/opt/llvm/bin:$PATH"

@@ -18,7 +18,7 @@ alias cgt="cargo test"
 alias cgl="cargo clippy"
 
 # search
-alias ls="exa -a --icons --group-directories-first"
+alias ls="eza -a --icons --group-directories-first"
 alias ll="ls -lha --git"
 alias tree="ls --tree --level=2"
 
