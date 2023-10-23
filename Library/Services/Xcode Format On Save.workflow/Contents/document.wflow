@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>AMApplicationBuild</key>
-	<string>520</string>
+	<string>523</string>
 	<key>AMApplicationVersion</key>
 	<string>2.10</string>
 	<key>AMDocumentVersion</key>
@@ -102,12 +102,10 @@ end run</string>
 						<string>0</string>
 					</dict>
 				</dict>
-				<key>conversionLabel</key>
-				<integer>0</integer>
 				<key>isViewVisible</key>
 				<integer>1</integer>
 				<key>location</key>
-				<string>400.000000:303.000000</string>
+				<string>403.500000:368.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Run AppleScript.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
@@ -119,19 +117,10 @@ end run</string>
 	<dict/>
 	<key>workflowMetaData</key>
 	<dict>
-		<key>applicationBundleID</key>
-		<string>com.apple.dt.Xcode</string>
 		<key>applicationBundleIDsByPath</key>
-		<dict>
-			<key>/Applications/Xcode.app</key>
-			<string>com.apple.dt.Xcode</string>
-		</dict>
-		<key>applicationPath</key>
-		<string>/Applications/Xcode.app</string>
+		<dict/>
 		<key>applicationPaths</key>
-		<array>
-			<string>/Applications/Xcode.app</string>
-		</array>
+		<array/>
 		<key>inputTypeIdentifier</key>
 		<string>com.apple.Automator.nothing</string>
 		<key>outputTypeIdentifier</key>
@@ -140,10 +129,6 @@ end run</string>
 		<integer>11</integer>
 		<key>processesInput</key>
 		<false/>
-		<key>serviceApplicationBundleID</key>
-		<string>com.apple.dt.Xcode</string>
-		<key>serviceApplicationPath</key>
-		<string>/Applications/Xcode.app</string>
 		<key>serviceInputTypeIdentifier</key>
 		<string>com.apple.Automator.nothing</string>
 		<key>serviceOutputTypeIdentifier</key>

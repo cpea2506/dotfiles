@@ -350,6 +350,12 @@
 	<dict>
 		<key>Key Bindings</key>
 		<dict>
+			<key></key>
+			<array>
+				<string>scrollPageDown:</string>
+				<string>scrollPageUp:</string>
+				<string>complete:</string>
+			</array>
 			<key>$D</key>
 			<string>deleteToEndOfParagraph:</string>
 			<key>$J</key>
@@ -358,6 +364,10 @@
 			<string>nextCompletion:</string>
 			<key>^k</key>
 			<string>previousCompletion:</string>
+			<key>^n</key>
+			<string>moveDown:</string>
+			<key>^p</key>
+			<string>moveUp:</string>
 			<key>~@[</key>
 			<array>
 				<string>moveBackward:</string>

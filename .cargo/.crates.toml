@@ -1,20 +1,12 @@
 [v1]
 "cargo-bundle 0.6.0 (registry+https://github.com/rust-lang/crates.io-index)" = ["cargo-bundle"]
 "cargo-cache 0.8.3 (registry+https://github.com/rust-lang/crates.io-index)" = ["cargo-cache"]
-"cargo-update 13.0.4 (registry+https://github.com/rust-lang/crates.io-index)" = [
+"cargo-update 13.1.0 (registry+https://github.com/rust-lang/crates.io-index)" = [
     "cargo-install-update",
     "cargo-install-update-config",
 ]
 "cargo-watch 8.4.1 (registry+https://github.com/rust-lang/crates.io-index)" = ["cargo-watch"]
-"fd-find 8.7.0 (registry+https://github.com/rust-lang/crates.io-index)" = ["fd"]
+"fd-find 8.7.1 (registry+https://github.com/rust-lang/crates.io-index)" = ["fd"]
 "ripgrep 13.0.0 (registry+https://github.com/rust-lang/crates.io-index)" = ["rg"]
 "selene 0.25.0 (registry+https://github.com/rust-lang/crates.io-index)" = ["selene"]
-"starship 1.15.0 (path+file:///Users/CPea2506/Tech/rust/starship)" = ["starship"]
 "stylua 0.18.2 (registry+https://github.com/rust-lang/crates.io-index)" = ["stylua"]
-"trunk 0.17.5 (registry+https://github.com/rust-lang/crates.io-index)" = ["trunk"]
-"wasm-bindgen-cli 0.2.87 (registry+https://github.com/rust-lang/crates.io-index)" = [
-    "wasm-bindgen",
-    "wasm-bindgen-test-runner",
-    "wasm2es6js",
-]
-"wasm-server-runner 0.4.0 (registry+https://github.com/rust-lang/crates.io-index)" = ["wasm-server-runner"]

@@ -3,13 +3,11 @@
 [user]
 	name = CPea
 	email = cpea2506@gmail.com
-[core]
-	excludesfile = ~/.gitignore_global
-    editor = lvim
 [init]
 	defaultBranch = main
-[pull]
-	rebase = true
+[core]
+	excludesfile = ~/.globalgitignore
+    editor = lvim
 [includeIf "gitdir:~/Work/Projects/"]
     path = ~/Work/Projects/.gitconfig
 [filter "lfs"]
