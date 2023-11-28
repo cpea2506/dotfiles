@@ -1,12 +1,8 @@
 [v1]
 "cargo-bundle 0.6.0 (registry+https://github.com/rust-lang/crates.io-index)" = ["cargo-bundle"]
 "cargo-cache 0.8.3 (registry+https://github.com/rust-lang/crates.io-index)" = ["cargo-cache"]
-"cargo-update 13.1.0 (registry+https://github.com/rust-lang/crates.io-index)" = [
+"cargo-update 13.3.0 (registry+https://github.com/rust-lang/crates.io-index)" = [
     "cargo-install-update",
     "cargo-install-update-config",
 ]
 "cargo-watch 8.4.1 (registry+https://github.com/rust-lang/crates.io-index)" = ["cargo-watch"]
-"fd-find 8.7.1 (registry+https://github.com/rust-lang/crates.io-index)" = ["fd"]
-"ripgrep 13.0.0 (registry+https://github.com/rust-lang/crates.io-index)" = ["rg"]
-"selene 0.25.0 (registry+https://github.com/rust-lang/crates.io-index)" = ["selene"]
-"stylua 0.18.2 (registry+https://github.com/rust-lang/crates.io-index)" = ["stylua"]

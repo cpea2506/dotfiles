@@ -1,7 +1,7 @@
 gui:
   mainPanelSplitMode: "flexible"
   language: "en"
-  showIcons: true
+  nerdFontsVersion: 3
   theme:
     selectedLineBgColor:
       - "#4b5261"
