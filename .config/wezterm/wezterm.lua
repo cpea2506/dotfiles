@@ -4,7 +4,7 @@ local config = {
 	color_scheme = "Dark Flat",
 	cursor_thickness = 2.0,
 	default_cursor_style = "SteadyUnderline",
-	font = wezterm.font("Liga SFMono Nerd Font", { weight = "Medium" }),
+	font = wezterm.font("LigaSFMono Nerd Font", { weight = "Medium" }),
 	font_size = 13.0,
 	hide_tab_bar_if_only_one_tab = true,
 	initial_cols = 143,

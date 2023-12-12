@@ -1,6 +1,7 @@
 [v1]
 "cargo-bundle 0.6.0 (registry+https://github.com/rust-lang/crates.io-index)" = ["cargo-bundle"]
 "cargo-cache 0.8.3 (registry+https://github.com/rust-lang/crates.io-index)" = ["cargo-cache"]
+"cargo-clean-all 0.6.1 (registry+https://github.com/rust-lang/crates.io-index)" = ["cargo-clean-all"]
 "cargo-update 13.3.0 (registry+https://github.com/rust-lang/crates.io-index)" = [
     "cargo-install-update",
     "cargo-install-update-config",
