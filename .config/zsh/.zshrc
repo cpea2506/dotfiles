@@ -8,6 +8,7 @@ plug "zsh-users/zsh-history-substring-search"
 plug "wintermi/zsh-rust"
 plug "wintermi/zsh-brew"
 plug "hlissner/zsh-autopair"
+plug "MichaelAquilina/zsh-auto-notify"
 
 for file in $ZDOTDIR/*.zsh; do
     source "$file"
