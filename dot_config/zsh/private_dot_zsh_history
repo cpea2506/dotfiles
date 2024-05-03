@@ -1,0 +1,40 @@
+: 1714701171:0;chezmoi add ~/.config/zsh
+: 1714701238:0;..
+: 1714701239:0;clear
+: 1714701247:0;cd
+: 1714701247:0;clear
+: 1714701254:0;chezmoi .zshrc
+: 1714701258:0;chezmoi add .zshrc
+: 1714701302:0;chezmoi readd
+: 1714701305:0;chezmoi re-add
+: 1714701313:0;lg
+: 1714701343:0;clear
+: 1714701344:0;nvim .
+: 1714701361:0;chezmoi add ~/.zshrc
+: 1714701367:0;lg
+: 1714701401:0;cd config
+: 1714701401:0;nvim .
+: 1714701417:0;git re-add
+: 1714701422:0;chezmoi re-add
+: 1714701423:0;lg
+: 1714701485:0;chezmoi add ~/.gitconfig ~/.globalgitignore
+: 1714701486:0;clear
+: 1714701561:0;cd
+: 1714701570:0;chezmoi add Pictures/Wallpaper
+: 1714701590:0;lg
+: 1714701687:0;chezmoi add ~/Pictures/Meme
+: 1714701705:0;clear
+: 1714701706:0;lg
+: 1714701717:0;clear
+: 1714701735:0;ls
+: 1714701739:0;nvim .
+: 1714701815:0;chezmoi diff
+: 1714701816:0;clear
+: 1714701834:0;chezmoi add .config/wezterm
+: 1714701842:0;chezmoi add .config/ranger
+: 1714701851:0;chezmoi add .config/starship.toml
+: 1714701860:0;chezmoi add .config/topgrade
+: 1714701866:0;chezmoi add .config/lazygit
+: 1714701867:0;clear
+: 1714701873:0;chezmoi add .config/bat
+: 1714701883:0;chezmoi add .config/zsh
