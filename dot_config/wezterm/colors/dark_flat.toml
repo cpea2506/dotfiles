@@ -1,0 +1,52 @@
+[colors]
+ansi = [
+    "#000000",
+    "#ee2c68",
+    "#3dd177",
+    "#ffc900",
+    "#00b0ff",
+    "#ff3f80",
+    "#64fcda",
+    "#fefefe",
+]
+background = "#18191a"
+brights = [
+    "#b0bec4",
+    "#d54e53",
+    "#82f4a2",
+    "#ffe47e",
+    "#80d7fe",
+    "#ff80ab",
+    "#a7fdeb",
+    "#fefefe",
+]
+foreground = "#eceef0"
+cursor_bg = "#ee2c68"
+cursor_border = "#ee2c68"
+cursor_fg = "#000000"
+selection_bg = "#25b1f5"
+selection_fg = "#f0f0f0"
+
+[colors.tab_bar]
+background = "#18191a"
+inactive_tab_edge = "#00b0ff"
+
+[colors.tab_bar.active_tab]
+bg_color = "#000000"
+fg_color = "#ffffff"
+intensity = "Bold"
+italic = true
+
+[colors.tab_bar.inactive_tab]
+bg_color = "#999999"
+fg_color = "#000000"
+
+[colors.tab_bar.new_tab]
+bg_color = "#313244"
+fg_color = "#ffffff"
+
+[colors.indexed]
+
+[metadata]
+name = "Dark Flat"
+origin_url = "https://github.com/cpea2506/dark-flat-wezterm"
