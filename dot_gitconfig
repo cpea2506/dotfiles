@@ -1,0 +1,18 @@
+[color]
+    ui = auto
+[user]
+	name = CPea
+	email = cpea2506@gmail.com
+[init]
+	defaultBranch = main
+[core]
+	excludesfile = ~/.globalgitignore
+    editor = lvim
+	compression = 0
+[includeIf "gitdir:~/Work/Projects/"]
+    path = ~/Work/Projects/.gitconfig
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
