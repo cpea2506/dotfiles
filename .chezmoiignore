@@ -1,0 +1,5 @@
+# zsh
+.zsh_history
+*zwc*
+.zsh_sessions/
+.zcompdump
