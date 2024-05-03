@@ -38,3 +38,32 @@
 : 1714701867:0;clear
 : 1714701873:0;chezmoi add .config/bat
 : 1714701883:0;chezmoi add .config/zsh
+: 1714701885:0;lg
+: 1714701889:0;l
+: 1714701890:0;lg
+: 1714701893:0;nvim .
+: 1714701912:0;clear
+: 1714701931:0;lg
+: 1714702222:0;chezmoi forget ~/.config/lazygit/state.yml
+: 1714702229:0;clear
+: 1714702230:0;ls
+: 1714702232:0;lg
+: 1714702245:0;cd .config
+: 1714702246:0;ls
+: 1714702251:0;ls lazygit
+: 1714702253:0;clear
+: 1714702531:0;lg
+: 1714702638:0;chezmoi git -- remote set-url git@github.com:cpea2506/dotfiles
+: 1714702644:0;chezmoi git -- remote set-url origin git@github.com:cpea2506/dotfiles
+: 1714702664:0;chezmoi git -- remote set-url --add origin git@github.com:cpea2506/dotfiles
+: 1714702673:0;chezmoi git -- remote add origin git@github.com:cpea2506/dotfiles
+: 1714702674:0;lg
+: 1714702715:0;chezmoi git -- push --force-with-lease
+: 1714702723:0;chezmoi git -- push origin main --force-with-lease
+: 1714702795:0;chezmoi edit ~/.gitconfig
+: 1714702807:0;cd zsh
+: 1714702808:0;nvim .
+: 1714702838:0;nvim ~/.gitconfig
+: 1714702844:0;clear
+: 1714702847:0;lg
+: 1714702853:0;chezmoi re-add 

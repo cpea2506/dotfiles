@@ -7,7 +7,7 @@
 	defaultBranch = main
 [core]
 	excludesfile = ~/.globalgitignore
-    editor = lvim
+    editor = nvim
 	compression = 0
 [includeIf "gitdir:~/Work/Projects/"]
     path = ~/Work/Projects/.gitconfig
