@@ -1,0 +1,23 @@
+[misc]
+# Don't ask for confirmations
+assume_yes = true
+
+# disable steps
+disable = ["pip3", "containers", "gem", "ruby_gems"]
+
+# Do not ask to retry failed steps
+no_retry = true
+
+# Display the time in step titles
+display_time = true
+
+# Cleanup temporary or old files
+cleanup = true
+
+[brew]
+greedy_cask = true
+autoremove = true
+
+[commands]
+"Wezterm update" = "brew upgrade --cask wezterm-nightly --no-quarantine --greedy-latest"
+"Neovim update" = "brew upgrade neovim --fetch-head"
