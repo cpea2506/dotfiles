@@ -1,0 +1,30 @@
+lastupdatecheck: 0
+recentrepos:
+- /Users/CPea2506/.local/share/chezmoi
+- /Users/CPea2506/Work/Projects/arthrexvip-unity-shoulder/src/ArthrexVIP-Unity/Assets/Plugins/Arthrex.VIP.Common
+- /Users/CPea2506/work/Projects/arthrexvip-unity-shoulder
+- /Users/CPea2506/work/Projects/arthrexvip-unity-shoulder/src/ArthrexVIP-Unity/Assets/Plugins/Arthrex.VIP.Common
+- /Users/CPea2506/Work/Projects/arthrexvip-unity-shoulder
+- /Users/CPea2506/.config/nvim
+- /Users/CPea2506/.config/brewfile/cpea2506_Brewfile
+- /opt/homebrew/Library/Taps/homebrew/homebrew-core
+- /Users/CPea2506/.local/share/nvim/lazy/cord.nvim
+- /Users/CPea2506/Developer/nvim-discord-presence-assets
+- /Users/CPea2506/.local/share/nvim/lazy/one_monokai.nvim
+- /Users/CPea2506/.local/share/nvim/lazy/nvim-snippets
+- /Users/CPea2506/Developer/Rust/flappybust
+- /opt/homebrew
+- /Users/CPea2506/.local/share/zap
+- /opt/homebrew/Library/Taps/rcmdnk/homebrew-file
+startuppopupversion: 5
+lastversion: 0.41.0
+customcommandshistory:
+- q
+- 'ci: update build for other os'
+hidecommandlog: false
+ignorewhitespaceindiffview: false
+diffcontextsize: 3
+localbranchsortorder: recency
+remotebranchsortorder: alphabetical
+gitlogorder: topo-order
+gitlogshowgraph: always

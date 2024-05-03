@@ -1,0 +1,21 @@
+gui:
+  mainPanelSplitMode: "flexible"
+  language: "en"
+  nerdFontsVersion: 3
+  theme:
+    selectedLineBgColor:
+      - "#4b5261"
+    selectedRangeBgColor:
+      - "#4b5261"
+  branchColors:
+    "docs": blue
+    "fix": red
+    "feat": green
+git:
+  pull:
+    mode: "auto"
+notARepository: "quit"
+os:
+  edit: "lvim"
+update:
+  days: 7
