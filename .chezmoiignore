@@ -3,3 +3,6 @@
 *zwc*
 .zsh_sessions/
 .zcompdump
+
+# general
+.DS_Store
