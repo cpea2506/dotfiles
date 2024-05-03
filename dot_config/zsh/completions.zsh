@@ -13,10 +13,6 @@ else
     fi
 fi
 
-# dotbare completion
-_dotbare_completion_cmd
-_dotbare_completion_git
-
 _comp_options+=(globdots) # With hidden files
 
 # Ztyle pattern
