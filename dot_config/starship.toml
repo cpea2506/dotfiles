@@ -1,0 +1,88 @@
+format = """
+$username\
+$hostname\
+$singularity\
+$kubernetes\
+$directory\
+$vcsh\
+$git_branch\
+$git_commit\
+$git_state\
+$git_status\
+$hg_branch\
+$docker_context\
+$package\
+$cmake\
+$dart\
+$deno\
+$dotnet\
+$elixir\
+$elm\
+$erlang\
+$golang\
+$helm\
+$java\
+$julia\
+$kotlin\
+$lua\
+$nim\
+$nodejs\
+$ocaml\
+$perl\
+$pulumi\
+$purescript\
+$python\
+$rlang\
+$red\
+$ruby\
+$rust\
+$swift\
+$terraform\
+$vlang\
+$vagrant\
+$nix_shell\
+$conda\
+$memory_usage\
+$aws\
+$gcloud\
+$openstack\
+$azure\
+$crystal\
+$line_break\
+$jobs\
+$character"""
+
+# display command execution time
+right_format = "$cmd_duration"
+
+# Disable the blank line at the start of the prompt
+add_newline = false
+command_timeout = 1000
+
+palette = "dark_flat"
+
+[palettes.dark_flat]
+green = "#3dd177"
+cyan = "#64fcda"
+orange = "#ff6633"
+aqua = "#00b0ff"
+
+[cmd_duration]
+min_time = 1
+show_milliseconds = true
+format = "[$duration]($style)"
+style = "bold cyan"
+
+[character]
+success_symbol = "[󰍳 ](green)"
+error_symbol = "[ ](orange)"
+
+[directory]
+style = "bold aqua"
+
+[git_branch]
+always_show_remote = true
+style = "green"
+
+[lua]
+symbol = " "
