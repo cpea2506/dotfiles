@@ -5,4 +5,4 @@ printf "Install Brew\n"
 
 printf "\nInstall Brewfile\n"
 brew install rcmdnk/file/brew-file
-brew file set_repo -r cpea2506/Brewfile -y
+brew file set_repo -r git@github.com:cpea2506/Brewfile -y
