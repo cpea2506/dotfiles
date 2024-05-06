@@ -2,8 +2,3 @@
 type = "git-repo"
 url = "https://github.com/cpea2506/nvim.git"
 refreshPeriod = "168h"
-
-[".config/brewfile"]
-type = "git-repo"
-url = "https://github.com/cpea2506/Brewfile.git"
-refreshPeriod = "168h"
