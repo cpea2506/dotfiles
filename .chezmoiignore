@@ -1,3 +1,5 @@
+README.md
+
 # zsh
 .zsh_history
 *zwc*
@@ -5,4 +7,4 @@
 .zcompdump
 
 # general
-.DS_Store
+/**/.DS_Store
