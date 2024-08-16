@@ -1,5 +1,6 @@
 [[ -f "$HOME/.local/share/zap/zap.zsh" ]] && source "$HOME/.local/share/zap/zap.zsh"
 
+# Plugins.
 plug "zsh-users/zsh-autosuggestions"
 plug "zsh-users/zsh-syntax-highlighting"
 plug "zsh-users/zsh-completions"
@@ -9,9 +10,8 @@ plug "wintermi/zsh-brew"
 plug "hlissner/zsh-autopair"
 plug "MichaelAquilina/zsh-auto-notify"
 
-for file in $ZDOTDIR/*.zsh; do
-    source "$file"
-done
+# Local plugins.
+plug $ZDOTDIR/*;
 
 eval "$(starship init zsh)"
 eval "$(zoxide init zsh --cmd cd)"
