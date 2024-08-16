@@ -23,3 +23,6 @@ if [[ -f $(brew --prefix)/etc/brew-wrap ]]; then
      echo "Brewfile was updated!"
    }
 fi
+
+# bun completions
+[ -s "/Users/CPea2506/.bun/_bun" ] && source "/Users/CPea2506/.bun/_bun"

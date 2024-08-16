@@ -9,9 +9,6 @@ alias cgr="cargo run"
 alias cgt="cargo test"
 alias cgl="cargo clippy"
 
-# ranger
-alias ranger='ranger --choosedir=$HOME/.rangerdir; LASTDIR=`cat $HOME/.rangerdir`; cd "$LASTDIR"'
-
 # search
 alias ls="eza -a --icons --group-directories-first"
 alias ll="ls -lha --git"
