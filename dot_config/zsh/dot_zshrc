@@ -11,7 +11,9 @@ plug "hlissner/zsh-autopair"
 plug "MichaelAquilina/zsh-auto-notify"
 
 # Local plugins.
-plug $ZDOTDIR/*;
+for file in $ZDOTDIR/*.zsh; do
+     source "$file"
+ done
 
 eval "$(starship init zsh)"
 eval "$(zoxide init zsh --cmd cd)"
