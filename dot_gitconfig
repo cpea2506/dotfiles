@@ -9,8 +9,8 @@
 	excludesfile = ~/.globalgitignore
     editor = nvim
 	compression = 0
-[includeIf "gitdir:~/Work/Projects/"]
-    path = ~/Work/Projects/.gitconfig
+[includeIf "gitdir:~/Developer/Works/"]
+    path = ~/Developer/Works/.gitconfig
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
