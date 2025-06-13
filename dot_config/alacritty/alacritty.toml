@@ -1,0 +1,55 @@
+[window]
+dynamic_padding = true
+decorations = "Full"
+opacity = 0.85
+startup_mode = "Windowed"
+resize_increments = true
+option_as_alt = "OnlyLeft"
+
+[font]
+size = 13
+
+[font.normal]
+family = "LigaSFMono Nerd Font"
+style = "Medium"
+
+[font.italic]
+style = "Medium Italic"
+
+[colors.primary]
+foreground = "#eceef0"
+background = "#18191a"
+
+[colors.cursor]
+text = "#000000"
+cursor = "#ee2c68"
+
+[colors.selection]
+text = "#f0f0f0"
+background = "#25b1f5"
+
+[colors.normal]
+black = "#000000"
+red = "#ee2c68"
+green = "#3dd177"
+yellow = "#ffc900"
+blue = "#00b0ff"
+magenta = "#ff3f80"
+cyan = "#64fcda"
+white = "#fefefe"
+
+[colors.bright]
+black = "#b0bec4"
+red = "#d54e53"
+green = "#82f4a2"
+yellow = "#ffe47e"
+blue = "#80d7fe"
+magenta = "#ff80ab"
+cyan = "#a7fdeb"
+white = "#fefefe"
+
+[cursor]
+thickness = 0.2
+
+[cursor.style]
+shape = "Underline"
