@@ -6,6 +6,10 @@ startup_mode = "Windowed"
 resize_increments = true
 option_as_alt = "OnlyLeft"
 
+[window.padding]
+x = 5
+y = 5
+
 [font]
 size = 13
 
