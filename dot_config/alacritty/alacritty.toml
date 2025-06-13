@@ -16,6 +16,12 @@ style = "Medium"
 [font.italic]
 style = "Medium Italic"
 
+[font.bold]
+style = "SemiBold"
+
+[font.bold_italic]
+style = "SemiBold Italic"
+
 [colors.primary]
 foreground = "#eceef0"
 background = "#18191a"
