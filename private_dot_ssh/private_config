@@ -7,3 +7,7 @@ Host saritasa.com
 Host github.com
   HostName github.com
   IdentityFile ~/.ssh/id_ed25519_personal
+
+Host github.kd.com
+  HostName github.com
+  IdentityFile ~/.ssh/kdrsa
