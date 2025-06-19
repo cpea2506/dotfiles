@@ -1,0 +1,62 @@
+theme = "dark_flat"
+
+padding-x = 5
+line-height = 1.2
+
+confirm-before-quit = true
+option-as-alt = "left"
+hide-mouse-cursor-when-typing = true
+
+[cursor]
+shape = "underline"
+blinking = false
+
+[editor]
+program = "nvim"
+
+[window]
+mode = "Maximized"
+opacity = 0.85
+decorations = "Buttonless"
+macos-use-shadow = true
+
+[renderer]
+performance = "High"
+backend = "Automatic"
+disable-unfocused-render = true
+level = 1
+target-fps = 120
+
+[fonts]
+size = 14
+use-drawable-chars = true
+
+[fonts.regular]
+family = "LigaSFMono Nerd Font"
+style = "Normal"
+weight = 500
+
+[fonts.italic]
+family = "LigaSFMono Nerd Font"
+style = "Italic"
+weight = 500
+
+[fonts.bold]
+family = "LigaSFMono Nerd Font"
+style = "Normal"
+weight = 700
+
+[fonts.bold-italic]
+family = "LigaSFMono Nerd Font"
+style = "Italic"
+weight = 700
+
+[scroll]
+multiplier = 3.0
+divider = 1.0
+
+[navigation]
+mode = "Bookmark"
+clickable = true
+hide-if-single = true
+use-current-path = true
