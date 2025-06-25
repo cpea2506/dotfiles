@@ -1,22 +1,25 @@
 [misc]
-# Don't ask for confirmations
 assume_yes = true
-
-# disable steps
-disable = ["pip3", "containers", "gem", "ruby_gems"]
-
-# Do not ask to retry failed steps
+pre_sudo = true
+sudo_command = "sudo"
+disable = [
+  "system",
+  "node",
+  "yarn",
+  "pnpm",
+  "pip3",
+  "containers",
+  "gem",
+  "ruby_gems",
+]
 no_retry = true
-
-# Display the time in step titles
 display_time = true
-
-# Cleanup temporary or old files
 cleanup = true
+no_self_update = false
 
 [brew]
 greedy_cask = true
+greedy_latest = true
 autoremove = true
-
-[commands]
-"Neovim update" = "brew upgrade neovim --fetch-head"
+greedy_auto_updates = true
+fetch_head = true
