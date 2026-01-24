@@ -9,6 +9,9 @@
 	excludesfile = ~/.globalgitignore
     editor = nvim
 	compression = 0
+    pager = delta
+[interactive]
+    diffFilter = delta --color-only
 [includeIf "gitdir:~/Developer/Works/"]
     path = ~/Developer/Works/.gitconfig
 [filter "lfs"]
