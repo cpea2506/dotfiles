@@ -23,7 +23,6 @@ macos-use-shadow = true
 [renderer]
 performance = "High"
 backend = "Automatic"
-disable-unfocused-render = true
 level = 1
 target-fps = 120
 
