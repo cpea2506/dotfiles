@@ -55,7 +55,7 @@ multiplier = 3.0
 divider = 1.0
 
 [navigation]
-mode = "Bookmark"
+mode = "Tab"
 clickable = true
 hide-if-single = true
 use-current-path = true
