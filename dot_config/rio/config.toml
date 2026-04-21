@@ -19,6 +19,7 @@ mode = "Maximized"
 opacity = 0.85
 decorations = "Buttonless"
 macos-use-shadow = true
+colorspace = "display-p3"
 
 [renderer]
 performance = "High"
