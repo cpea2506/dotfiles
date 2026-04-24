@@ -1,23 +1,24 @@
 [color]
     ui = auto
 [user]
-	name = CPea
-	email = cpea2506@gmail.com
+    name = CPea
+    email = cpea2506@gmail.com
 [init]
-	defaultBranch = main
+    defaultBranch = main
 [core]
-	excludesfile = ~/.globalgitignore
+    excludesfile = ~/.globalgitignore
     editor = nvim
-	compression = 0
+    compression = 0
     pager = delta
+    sshCommand = "ssh -i ~/.ssh/id_ed25519_personal"
 [interactive]
     diffFilter = delta --color-only
 [includeIf "gitdir:~/Developer/Works/"]
     path = ~/Developer/Works/.gitconfig
 [filter "lfs"]
-	clean = git-lfs clean -- %f
-	smudge = git-lfs smudge -- %f
-	process = git-lfs filter-process
-	required = true
+    clean = git-lfs clean -- %f
+    smudge = git-lfs smudge -- %f
+    process = git-lfs filter-process
+    required = true
 [fetch]
-	prune = true
+    prune = true
