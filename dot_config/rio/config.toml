@@ -23,33 +23,13 @@ colorspace = "display-p3"
 
 [renderer]
 performance = "High"
-backend = "Automatic"
 level = 1
 target-fps = 120
 
 [fonts]
 size = 14
 use-drawable-chars = true
-
-[fonts.regular]
 family = "LigaSFMono Nerd Font"
-style = "Normal"
-weight = 500
-
-[fonts.italic]
-family = "LigaSFMono Nerd Font"
-style = "Italic"
-weight = 500
-
-[fonts.bold]
-family = "LigaSFMono Nerd Font"
-style = "Normal"
-weight = 700
-
-[fonts.bold-italic]
-family = "LigaSFMono Nerd Font"
-style = "Italic"
-weight = 700
 
 [scroll]
 multiplier = 3.0
