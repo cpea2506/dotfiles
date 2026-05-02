@@ -1,9 +1,8 @@
 theme = "dark_flat"
 
-margin = [0, 5]
+padding = [0, 5]
 line-height = 1.2
 
-confirm-before-quit = true
 option-as-alt = "left"
 hide-mouse-cursor-when-typing = true
 
@@ -11,15 +10,21 @@ hide-mouse-cursor-when-typing = true
 shape = "underline"
 blinking = false
 
+[bell]
+audio = true
+
 [editor]
 program = "nvim"
+
+[effects]
+custom-mouse-cursor = false
+trail-cursor = true
 
 [window]
 mode = "Maximized"
 opacity = 0.85
 decorations = "Buttonless"
 macos-use-shadow = true
-colorspace = "display-p3"
 
 [renderer]
 performance = "High"
