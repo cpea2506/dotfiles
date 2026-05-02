@@ -17,7 +17,6 @@ audio = true
 program = "nvim"
 
 [effects]
-custom-mouse-cursor = false
 trail-cursor = true
 
 [window]
