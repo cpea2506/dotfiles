@@ -1,0 +1,3 @@
+# https://taplo.tamasfe.dev/configuration/file.html
+
+include = ["**/*.toml"]
