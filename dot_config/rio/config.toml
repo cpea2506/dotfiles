@@ -22,7 +22,7 @@ trail-cursor = false
 [window]
 mode = "Maximized"
 opacity = 0.85
-# blur = "macos-glass-clear"
+blur = "macos-glass-clear"
 decorations = "Buttonless"
 macos-use-shadow = true
 
