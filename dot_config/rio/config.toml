@@ -22,7 +22,7 @@ trail-cursor = false
 [window]
 mode = "Maximized"
 opacity = 0.85
-blur = "macos-glass-clear"
+# blur = "macos-glass-clear"
 decorations = "Buttonless"
 macos-use-shadow = true
 
@@ -33,7 +33,7 @@ target-fps = 120
 
 [fonts]
 size = 14
-use-drawable-chars = true
+use-drawable-chars = false
 family = "LigaSFMono Nerd Font"
 
 [scroll]
