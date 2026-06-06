@@ -1,20 +1,14 @@
 {
   "mcpServers": {
-    "narsil-mcp": {
-      "type": "local",
-      "command": "narsil-mcp",
+    "codegraph": {
+      "type": "stdio",
+      "command": "codegraph",
       "tools": [
         "*"
       ],
       "args": [
-        "--repos",
-        ".",
-        "--git",
-        "--call-graph",
-        "--lsp",
-        "--persist",
-        "--watch",
-        "--streaming"
+        "serve",
+        "--mcp"
       ]
     }
   }
