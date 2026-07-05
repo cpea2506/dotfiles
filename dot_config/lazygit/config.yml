@@ -12,7 +12,7 @@ gui:
 notARepository: "skip"
 git:
   pagers:
-    - pager: delta --paging=never --line-numbers --hyperlinks --hyperlinks-file-link-format="lazygit-edit://{path}:{line}"
+    - pager: delta --dark --paging=never --line-numbers --hyperlinks --hyperlinks-file-link-format="lazygit-edit://{path}:{line}"
 os:
   edit: "nvim"
 customCommands:
