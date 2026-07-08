@@ -22,3 +22,5 @@
     required = true
 [fetch]
     prune = true
+[merge]
+    tool = ec
