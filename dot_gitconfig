@@ -25,5 +25,5 @@
 [merge]
     tool = ec
 [mergetool "ec"]
-	cmd = ec \"$BASE\" \"$LOCAL\" \"$REMOTE\" \"$MERGED\"
-	trustExitCode = true
+    cmd = ec \"$BASE\" \"$LOCAL\" \"$REMOTE\" \"$MERGED\"
+    trustExitCode = true
