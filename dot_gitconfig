@@ -22,8 +22,3 @@
     required = true
 [fetch]
     prune = true
-[merge]
-    tool = ec
-[mergetool "ec"]
-    cmd = ec \"$BASE\" \"$LOCAL\" \"$REMOTE\" \"$MERGED\"
-    trustExitCode = true
