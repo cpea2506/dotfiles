@@ -5,16 +5,14 @@
     email = cpea2506@gmail.com
 [init]
     defaultBranch = main
+[includeIf "gitdir:~/Developer/Works/"]
+    path = ~/Developer/Works/.gitconfig
 [core]
     excludesfile = ~/.globalgitignore
     editor = nvim
     compression = 0
     pager = delta
     sshCommand = "ssh -i ~/.ssh/id_ed25519_personal"
-[interactive]
-    diffFilter = delta --color-only
-[includeIf "gitdir:~/Developer/Works/"]
-    path = ~/Developer/Works/.gitconfig
 [filter "lfs"]
     clean = git-lfs clean -- %f
     smudge = git-lfs smudge -- %f
@@ -22,3 +20,17 @@
     required = true
 [fetch]
     prune = true
+[delta]
+    navigate = true
+    side-by-side = true
+[interactive]
+    diffFilter = delta --color-only
+[merge]
+    conflictStyle = zdiff3
+    tool = codediff
+[mergetool "codediff"]
+    cmd = nvim \"$MERGED\" -c \"CodeDiff merge \\\"$MERGED\\\"\"
+[diff]
+    tool = codediff
+[difftool "codediff"]
+    cmd = nvim \"$LOCAL\" \"$REMOTE\" +\"CodeDiff file $LOCAL $REMOTE\"
