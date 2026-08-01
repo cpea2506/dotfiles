@@ -1,3 +1,5 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/jesseduffield/lazygit/master/schema/config.json
+
 update:
   days: 7
 gui:
@@ -5,12 +7,9 @@ gui:
   theme:
     selectedLineBgColor:
       - "#4b5261"
-  branchColors:
-    "docs": blue
-    "fix": red
-    "feat": green
 notARepository: "skip"
 git:
+  autoForwardBranches: "allBranches"
   pagers:
     - pager: delta --dark --paging=never --line-numbers --hyperlinks --hyperlinks-file-link-format="lazygit-edit://{path}:{line}"
 os:
