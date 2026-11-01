@@ -27,10 +27,3 @@
     diffFilter = delta --color-only
 [merge]
     conflictStyle = zdiff3
-    tool = codediff
-[mergetool "codediff"]
-    cmd = nvim \"$MERGED\" -c \"CodeDiff merge \\\"$MERGED\\\"\"
-[diff]
-    tool = codediff
-[difftool "codediff"]
-    cmd = nvim \"$LOCAL\" \"$REMOTE\" +\"CodeDiff file $LOCAL $REMOTE\"
